@@ -179,7 +179,7 @@ function execute() {
             if(!header.match(/[a-zA-Z\-]*: .*/))
                 continue;
 
-            [key, value] = header.split(': ', 2);
+            [key, value] = header.split(':');
             Headers.custom[key.trim()] = value.trim();
         }
     }
